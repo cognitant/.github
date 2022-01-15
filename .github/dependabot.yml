@@ -1,0 +1,15 @@
+version: 2
+registries:
+  npm-npmjs:
+    type: npm-registry
+    url: ${{ secrets.NPM_REGISTRY }}
+    username: ${{ secrets.NPM_USER }}
+    password: ${{ secrets.NPM_PASS }} # Must be an unencoded password
+updates:
+  - package-ecosystem: 'npm'
+    directory: '/'
+    registries: "*"
+    schedule:
+      interval: 'daily'
+    allow:
+      - dependency-name: "cog.*"
