@@ -2,7 +2,7 @@ version: 2
 registries:
   npm-npmjs:
     type: npm-registry
-    url: ${{ secrets.NPM_REGISTRY }}
+    url: https://npm.cognitant.com
     username: ${{ secrets.NPM_USER }}
     password: ${{ secrets.NPM_PASS }} # Must be an unencoded password
 updates:
