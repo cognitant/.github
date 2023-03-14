@@ -1,6 +1,6 @@
 ### Summary
 
-### Related Tickets and PR's
+### Related Tickets and PRs
 
 
 ### Problem
@@ -8,7 +8,7 @@
 ### Solution
 
 ### Detail
-(if this is UI related is there screenshots, if this is fixing a bug what are the reporodcution steps, are there any details that would help test this change once it is on the integration environment)
+(if this is UI related are there screenshots, if this is fixing a bug what are the reproduction steps, are there any details that would help test this change once it is on the integration environment)
 
 
 ----
