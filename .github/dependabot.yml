@@ -8,8 +8,7 @@ registries:
 updates:
   - package-ecosystem: 'npm'
     directory: '/'
-    registries: "*"
+    registries:
+      - 'npm-npmjs'
     schedule:
       interval: 'monthly'
-    allow:
-      - dependency-name: "cog.*"
