@@ -8,7 +8,17 @@ registries:
 updates:
   - package-ecosystem: 'npm'
     directory: '/'
-    registries:
-      - 'npm-npmjs'
+    registries: '*'
     schedule:
       interval: 'monthly'
+    ignore:
+      - dependency-name: '@types/node'
+        # We'll update Node only when we're ready
+        versions: ['24.x']
+        # We'll update these linting dependencies only when we're ready
+      - dependency-name: '*eslint*'
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      # Check for updates to GitHub Actions every week
+      interval: "monthly"
